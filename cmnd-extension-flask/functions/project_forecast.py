@@ -34,3 +34,11 @@ def project_forecast(project_name, building_type, building_size, project_time_fr
     scenarios = json.loads(scenario_planning(project_name, location,
                            cost_estimates["total_cost"], project_time_frame))
     return json.dumps(cost_estimates | revenue_projections | profitability_statistics | risk_assesments | scenarios)
+
+
+def main():
+    result = project_forecast("CourtYard", "Hotel", "5 floor", "1 year", "Iskele")
+    print(result)
+
+if __name__ == '__main__':
+    main()
