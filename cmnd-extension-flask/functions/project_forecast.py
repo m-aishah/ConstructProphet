@@ -37,6 +37,9 @@ def project_forecast(project_name, building_type, building_size, project_time_fr
 
 
 def main():
+    """
+    Performs a simple test of project_forecast function_
+    """
     result = project_forecast("CourtYard", "Hotel", "5 floor", "1 year", "Iskele")
     print(result)
 
