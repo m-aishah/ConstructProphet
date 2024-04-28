@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+pydantic
+flask
+requests
+json
+urllib
